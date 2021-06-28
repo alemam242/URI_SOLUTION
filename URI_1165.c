@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+   int n,i,x,j,sum;
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   {
+      sum=0;
+      scanf("%d",&x);
+      for(j=1;j<=x;j++)
+      {
+         if(x%j==0)
+         {
+            sum=sum+j;
+         }
+      }
+      if((x+1)==sum)
+      {
+         printf("%d eh primo\n",x);
+      }
+      else
+      {
+         printf("%d nao eh primo\n",x);
+      }
+   }
+   return 0;
+}
